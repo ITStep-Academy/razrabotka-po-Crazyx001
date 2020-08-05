@@ -340,6 +340,6 @@ ASALocalRun/
 healthchecksdb
 
 # VS C++ project files
-.vcxproj
-.filters
-.sln
+*.vcxproj
+*.filters
+*.sln
