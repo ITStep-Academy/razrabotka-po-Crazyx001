@@ -161,4 +161,70 @@ int main11()
     return 0;
 }
 
-//12, 13, 14 и 15 я не смог решить без использования циклов, буду рад помощи!
+int main12()
+{
+    int x, d1, d2, d3, d4, d5, d6, d7, d8, d9;
+
+    printf("Please input a number: ");
+    scanf_s("%d", &x);
+
+    d1 = x / 100000000;
+    d2 = x / 10000000 % 10;
+    d3 = x / 1000000 % 10;
+    d4 = x / 100000 % 10;
+    d5 = x / 10000 % 10;
+    d6 = x / 1000 % 10;
+    d7 = x / 100 % 10;
+    d8 = x / 10 % 10;
+    d9 = x % 10;
+
+    x = d1 * 256;
+    x += d2 * 128;
+    x += d3 * 64;
+    x += d4 * 32;
+    x += d5 * 16;
+    x += d6 * 8;
+    x += d7 * 4;
+    x += d8 * 2;
+    x += d9 * 1;
+
+    printf("%d %d%d%d%d %d%d%d%d > %d", d1, d2, d3, d4, d5, d6, d7, d8, d9, x);
+
+    return 0;
+}
+
+int main13()
+{
+    int x;
+
+    printf("Please input a number: ");
+    scanf_s("%o", &x);
+
+    printf("%o > %d", x, x);
+
+    return 0;
+}
+
+int main14()
+{
+    int x;
+
+    printf("Please input a number: ");
+    scanf_s("%d", &x);
+
+    printf("%d > %x", x, x);
+
+    return 0;
+}
+
+int main15()
+{
+    int x;
+
+    printf("Please input a number: ");
+    scanf_s("%x", &x);
+
+    printf("%x > %d", x, x);
+
+    return 0;
+}
